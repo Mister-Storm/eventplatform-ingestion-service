@@ -1,10 +1,5 @@
 spring:
   application:
     name: ingestion-service
-aws:
-  sqs:
-    endpoint:
-      url: http://localhost:4566
-    key: test
-    secret: test
-    queue-url: http://localhost:4566/000000000000/test-queue
+  profiles:
+    active: local
